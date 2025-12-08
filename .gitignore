@@ -9,3 +9,4 @@ myenv/
 *~
 *.swp
 *.log
+backend/database.db
