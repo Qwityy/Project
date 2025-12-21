@@ -1,0 +1,377 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.min.css");
+
+.header_desktop {
+  background-color: #E34C25;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  gap: 10px;
+  height: 94px;
+  align-items: center;
+}
+
+.link_line {
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 994px;
+  height: 54px;
+}
+
+.link_line a{
+  color: white;
+  margin: 20px;
+  text-decoration: underline;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.link_line a:hover {
+  background-color: white;
+  color: black;
+}
+
+.content {
+display: flex;
+flex-direction: column;
+width: fill();
+padding-top: 40px;
+padding-right: 80px;
+padding-left: 80px;
+gap: 120px;
+}
+
+.banner {
+  box-sizing: border-box;
+  background-color: #A9A9A9;
+  border-radius: 42px;
+  width: fill();
+  aspect-ratio: 16/9
+}
+
+#text1 {
+  font-family: "Inter";
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 80px;
+  padding-left: 80px;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: "Semi-Bold";
+  display: flex;
+  flex-direction: column;
+  height: 58px;
+  width: fill(1280px);
+  row-gap: 120px;
+}
+
+.tv_show_block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: hug(484.22px);
+  width: fixed(1120px);
+}
+
+.Frame2 {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  width: fill(1120px);
+  height: hug(92px);
+}
+
+.topic_and_description {
+  display: flex;
+  flex-direction: column;
+  width: 413px;
+  height: hug(92px);
+  gap: 16px;
+}
+
+.topic_name {
+  display: flex;
+  width: hug(500px);
+  height: hug(46px);
+}
+
+#topic_name {
+  color: #E34C25;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: "Medium";
+  font-size: 34.6px;
+  line-height: 48.08px;
+}
+
+#topic_description {
+  font-family: "Inter";
+  font-style: Light;
+  margin-left: 21.3px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #404040;
+  vertical-align: middle;
+}
+
+.link_button {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+}
+.tv_show_line {
+  display: flex;
+  gap: 20px;
+  width: fill();
+  height: hug(352.22px);
+  justify-content: space-between;
+}
+
+.tv_show_line img {
+  background-color: #A8A8A8;
+  height: 352.22px;
+  width: 265px;
+  border-radius: 20px;
+}
+
+.youtube_block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: hug(430px);
+  width: fill();
+}
+
+.Frame3 {
+  display: flex;
+  width: fill();
+  height: hug(195px);
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.Frame3 img {
+  background-color: #A8A8A8;
+  width: 346.67px;
+  height: 195px;
+  border-radius: 20px;
+}
+
+.Frame4 {
+  display: flex;
+  width: fill();
+  height: hug(195px);
+  gap: 40px;
+  justify-content: space-between;
+}
+
+#Frame4_img1 {
+  background-color: #A8A8A8;
+  width: 346.67px;
+  height: 195px;
+  border-radius: 20px;
+}
+
+#Frame4_img2 {
+  background-color: #A8A8A8;
+  width: 346.67px;
+  height: 195px;
+  border-radius: 20px;
+}
+.Frame5 {
+  display: flex;
+  width: 346.67px;
+  height: 195px;
+  gap: 30px;
+}
+
+.topic_and_description2 {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  height: 122px;
+}
+
+.topic_name2 {
+  display: flex;
+  width: 265px;
+  height: 46px;
+  gap: 10px;
+}
+
+#topic_name2 {
+  color: #E34C25;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: "Medium";
+  font-size: 34.6px;
+  line-height: 48.08px;
+}
+
+#topic_description2 {
+font-family: "Inter";
+font-weight: 300;
+font-style: Light;
+font-size: 21.3px;
+line-height: 30px;
+letter-spacing: 0%;
+vertical-align: middle;
+}
+
+.link_button2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 122px;
+}
+
+.Experts_section {
+  background-color: #E1E1E1;
+  display: flex;
+  width: fill(1280px);
+  height: hug(695px);
+  padding-top: 160px;
+  padding-bottom: 160px;
+  padding-right: 120px;
+  padding-left: 120px;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 120px;
+  margin-left: -80px;
+  margin-right: -80px;
+}
+
+.Experts_content {
+  display: flex;
+  flex-direction: column;
+  width: fill(1040px);
+  height: hug(375px);
+  gap: 60px;
+  align-items: center;
+}
+
+.Experts_content p {
+  color: #E34C25;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 60px;
+  line-height: 105%;
+  letter-spacing: -7%;
+  text-align: center;
+}
+
+.footer_desktop {
+  display: flex;
+  background-color: #E34C25;
+  gap: 10px;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.left_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fill(830px);
+  height: fill(259px);
+}
+
+.name_block {
+  display: flex;
+  flex-direction: column;
+  width: fill(830px);
+  height: fill(227px);
+}
+
+.name_block p {
+  font-family: "Inter";
+  color: white;
+  font-size: 40px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-weight: 300;
+  font-style: "Light";
+}
+
+.sub_text_table {
+  display: flex;
+  width: hug(182px);
+  height: hug(32px);
+  gap: 18px;
+}
+
+.right_column {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: fill(259px);
+  justify-content: space-between;
+}
+
+.news_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.news_block span {
+font-family: "Inter";
+font-weight: 400;
+font-style: "Regular";
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: white;
+}
+
+.info_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.enter_frame {
+display: flex;
+gap: 10px;
+}
+
+.enter_frame input {
+width: 240px;
+height: 50px;
+border-radius: 8px;
+border: 0px;
+}
+
+.enter_frame button {
+border-radius: 8px;
+border: 0px;
+height: 50px;
+width: 56px;
+background-color: white;
+}
+
+.info_block p {
+  color: white;
+  font-family: "Inter";
+  font-size: 13.3px;
+  font-weight: 500;
+  font-style: "Medium";
+  line-height: 0px;
+  text-align: right;
+}
+
