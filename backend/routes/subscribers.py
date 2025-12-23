@@ -6,10 +6,10 @@ from backend.functions import emailvalidation
 router = APIRouter(prefix="/newsletter/subscribe")
 
 
-@router.post("/api")
+@router.post("")
 async def subscribe_newsletter(request: Request):
-    body = await request.body()
-    email = body.decode().strip()
+    data = await request.json()
+    email = data.get("email")
     if emailvalidation.emailvalidation(email):
         return await subscribers.add_subscriber(email)
     else:

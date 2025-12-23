@@ -1,17 +1,22 @@
 const form = document.getElementById("enter_frame");
 const emailInput = document.getElementById("email");
 const submitButton = document.getElementById("submit_button")
-const url = "http://localhost:8000/newsletter/subscribe/api"
+const url_post_subscribers = "http://localhost:8000/newsletter/subscribe/"
 
-form.addEventListener("submit", async function (event) {
+
+form.addEventListener("submit", async function(event) {
     event.preventDefault();
     if (event.submitter === submitButton) {
     submitButton.disabled = true;
+    const email = emailInput.value.trim();
     try {
-        const email = emailInput.value.trim();
-        const response = await fetch(url, {
+        const formData = {
+            "email": email
+        }
+        const response = await fetch(url_post_subscribers, {
             method: "POST",
-            body: email
+            headers: {"Content-type": "application/json"},
+            body: JSON.stringify(formData)
         });
             if (response.ok) {
                 console.log("все ок")
@@ -24,3 +29,38 @@ form.addEventListener("submit", async function (event) {
                 submitButton.disabled = false;
             }
 }})
+
+
+const tv_shows_Button = getElementById("tv_shows_Button");
+const digital_Button = getElementById("digital_Button");
+const url_get_tv_shows = "http://localhost:8000/categories/tv_shows"
+const url_get_digital = "http://localhost:8000/categories/digital"
+
+
+
+tv_shows_Button.addEventListener("click", async function() {
+    try {
+        const response = await fetch(url_get_tv_shows)
+        if (response.ok) {
+            console.log("все ок")
+        } else {
+            console.error(await response.text());
+        }
+    } catch(error) {
+        console.error(`ошибка при отправке ${error}`);
+    } finally {}
+});
+
+
+digital_Button.addEventListener("click", async function() {
+    try {
+        const response = await fetch(url_get_digital)
+        if (response.ok) {
+            console.log("все ок")
+        } else {
+            console.error(await response.text());
+        }
+    } catch(error) {
+        console.error(`ошибка при отправке ${error}`);
+    } finally {}
+});
