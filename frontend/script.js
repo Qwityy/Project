@@ -41,8 +41,9 @@ const url_get_digital = "http://localhost:8000/categories/digital"
 tv_shows_Button.addEventListener("click", async function() {
     try {
         const response = await fetch(url_get_tv_shows)
+        const data = await response.json()
         if (response.ok) {
-            console.log("все ок")
+            console.log("все ок", data)
         } else {
             console.error(await response.text());
         }
@@ -55,8 +56,9 @@ tv_shows_Button.addEventListener("click", async function() {
 digital_Button.addEventListener("click", async function() {
     try {
         const response = await fetch(url_get_digital)
+        const data = await response.json()
         if (response.ok) {
-            console.log("все ок")
+            console.log("все ок", data)
         } else {
             console.error(await response.text());
         }

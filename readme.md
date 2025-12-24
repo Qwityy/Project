@@ -3,18 +3,24 @@
 ```
 Project/
 ├── frontend/          # only html+css (пока что)
-├── backend/           # Python FastAPI Server
-└── docker/ # Docker configs
+└── backend/           # Python FastAPI Server
 ```
 
-## Start (only backend)
+## Start
+### Backend
 ```
 docker build -t backend .
 docker run backend
 ```
+### Frontend
+```
+cd frontend
+python -m http.server 3000
+```
 
 ## Access 
 ```
-* backend: http://localhost:8000
-* FastAPI Docs: http://localhost:8000/docs
+backend: http://localhost:8000
+frontend: http://localhost:3000
+FastAPI Docs: http://localhost:8000/docs
 ```

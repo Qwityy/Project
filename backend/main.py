@@ -4,6 +4,7 @@ import backend.routes.navigation as navigation
 import backend.routes.subscribers as subscribers
 from backend.database.createdb import create_tables
 from backend.database.seed import seed_all
+from fastapi.middleware.cors import CORSMiddleware
 
 
 def lifespan(app: FastAPI):
@@ -13,6 +14,16 @@ def lifespan(app: FastAPI):
 
 
 app = FastAPI(lifespan=lifespan)
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins = "http://localhost:3000",
+    allow_methods = ["*"],
+    allow_headers = ["*"],
+    allow_credentials = True,
+    expose_headers = ["*"]
+)
 
 
 @app.get("/")
